@@ -15,6 +15,7 @@ import { NuevodetallereservaComponent } from './detallereserva/nuevodetallereser
 import { NuevoclienteComponent } from './cliente/nuevocliente/nuevocliente.component';
 import { NuevorestauranteComponent } from './restaurante/nuevorestaurante/nuevorestaurante.component';
 import { UsuarioeditarComponent } from './usuario/usuarioeditar/usuarioeditar.component';
+import { EditardetallereservaComponent } from './detallereserva/editardetallereserva/editardetallereserva.component';
 
 const routes: Routes = [
   {
@@ -75,6 +76,11 @@ const routes: Routes = [
   {
     path: 'detallereserva/nuevodetallereserva',
     component: NuevodetallereservaComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'detallereserva/editardetallereserva',
+    component: EditardetallereservaComponent,
     pathMatch: 'full'
   },
   {

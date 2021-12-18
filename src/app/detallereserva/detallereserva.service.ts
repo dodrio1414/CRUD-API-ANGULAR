@@ -20,12 +20,15 @@ export class DetallereservaService {
   }
 
   agregarDetalle(detalle: DetalleReserva){
-    this.http.post<any>('http://127.0.0.1:8080/api/detalleReserva', detalle).subscribe();
+    this.http.post<any>('http://127.0.0.1:8080/api/detallaReserva', detalle).subscribe();
   }
 
   eliminarDetalle(id:number){
     this.http.delete<any>('http://127.0.0.1:8080/api/detalleReserva/'+ id).subscribe();
   }
 
-
+  editarDetalle(id:number, detalle: DetalleReserva){
+    this.http.put<any>('http://127.0.0.1:8080/api/detalleReserva/'+ id, detalle).subscribe();
+  }
+  
 }

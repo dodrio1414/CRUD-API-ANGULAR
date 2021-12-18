@@ -12,26 +12,22 @@ import { UsuarioService } from '../usuario.service';
 export class UsuarioeditarComponent implements OnInit {
 
   constructor(private usuarioService: UsuarioService) { 
-    this.usuarioService.listarUsuario();
+    
   }
 
   ngOnInit(): void {
+
   }
 
-  
-  
-
   editar(inputNombre: string,inputLogin: string,inputPassword: string,inputEstado: number,inputTarea: string){
-    const nuevoUsuario: Usuario = {
+    const editar: Usuario = {
       id: 0,
       nombre: inputNombre,
       login: inputLogin,
       password: inputPassword,
       estado: inputEstado,
       tarea: inputTarea
-  
     };
-
-    this.usuarioService.editarUsuario(parseInt("1"),nuevoUsuario);
+    this.usuarioService.editarUsuario(2,editar);
   }
 }

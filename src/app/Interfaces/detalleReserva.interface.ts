@@ -1,7 +1,7 @@
 export interface DetalleReserva {
     id:       number;
-    ingreso:  Date;
-    salida:   Date;
+    ingreso:  Date | null;
+    salida:   Date | null;
     precio:   number;
     adelanto: number;
     dias:     number;

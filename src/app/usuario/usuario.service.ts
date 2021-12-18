@@ -31,15 +31,15 @@ export class UsuarioService {
     this.http.delete<any>('http://127.0.0.1:8080/api/usuarios/'+ id).subscribe();
   }
 
-  editarUsuario(id:number, usuarioM:Usuario){
-    this.http.put<Usuario[]>('http://127.0.0.1:8080/api/usuarios/'+ id,usuarioM)
-    .subscribe((respuesta: any)=>{
-      this.lista = respuesta;
-    });
-  }
-
-  // editarUsuario(id:number,usuario: Usuario){
-  //   this.http.put<any>('http://127.0.0.1:8080/api/usuarios/'+id, usuario).subscribe();
+  // editarUsuario(id:number, usuarioM:Usuario){
+  //   this.http.put<Usuario[]>('http://127.0.0.1:8080/api/usuarios/'+ id,usuarioM)
+  //   .subscribe((respuesta: any)=>{
+  //     this.lista = respuesta;
+  //   });
   // }
+
+  editarUsuario(id:number,usuario: Usuario){
+    this.http.put<any>('http://127.0.0.1:8080/api/usuarios/'+id, usuario).subscribe();
+  }
 
 }

@@ -23,5 +23,5 @@ export class ListadetallereservaComponent implements OnInit {
   eliminarDetalle(id: number){
     this.detallereservaService.eliminarDetalle(id);
   }
-
+ 
 }

@@ -11,12 +11,13 @@ import { RestauranteModule } from './restaurante/restaurante.module';
 import { HabitacionModule } from './habitacion/habitacion.module';
 import { DetallereservaModule } from './detallereserva/detallereserva.module';
 import { ClienteModule } from './cliente/cliente.module';
+import { FormsModule } from '@angular/forms';
+import { NuevodetallereservaComponent } from './detallereserva/nuevodetallereserva/nuevodetallereserva.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    
   ],
   imports: [
     BrowserModule,
