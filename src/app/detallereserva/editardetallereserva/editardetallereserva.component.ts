@@ -24,7 +24,9 @@ export class EditardetallereservaComponent implements OnInit {
       adelanto: inputAdelanto,
       dias: inputDias
     };
-    this.detalleService.editarDetalle(3,nuevoDetalle);
+    this.detalleService.editarDetalle(4,nuevoDetalle);
   }
+
+  
 
 }

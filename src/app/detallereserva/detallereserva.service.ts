@@ -24,11 +24,14 @@ export class DetallereservaService {
   }
 
   eliminarDetalle(id:number){
-    this.http.delete<any>('http://127.0.0.1:8080/api/detalleReserva/'+ id).subscribe();
+    this.http.delete<any>('http://127.0.0.1:8080/api/detallaReserva/'+ id).subscribe();
   }
 
   editarDetalle(id:number, detalle: DetalleReserva){
-    this.http.put<any>('http://127.0.0.1:8080/api/detalleReserva/'+ id, detalle).subscribe();
+    this.http.put<any>('http://127.0.0.1:8080/api/detallaReserva/'+ id, detalle).subscribe();
   }
   
+  
+
+
 }

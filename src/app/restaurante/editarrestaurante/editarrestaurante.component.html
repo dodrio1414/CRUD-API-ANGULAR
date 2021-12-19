@@ -1,0 +1,41 @@
+<form>
+    <div class="form-header">
+        <h5 class="form-title">Create new food</h5>
+    </div>
+    <div class="col">
+    <div class="row">
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Plato</label>
+        <input class="form-control" type="text" name="name" placeholder="Rodrigo Aguirre Fer" id="nombreInput"
+                #inputPlato/>
+        </div>
+    </div>
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Precio</label>
+        <input class="form-control" type="number" name="username" placeholder="noseKePoner:(" id="loginInput" 
+                #inputPrecio/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <div class="mb-3">
+            <label class="form-label">Foto</label>
+            <textarea class="form-control" rows="5" placeholder="Ej. El Choro, La pepera, etc" id="tareaInput"
+                #inputFoto></textarea>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    </div>
+    <div class="text-end px-xl-3">
+        <a href="restaurante" (click)="editarRestaurante(inputPlato.value,inputPrecio.valueAsNumber,inputFoto.value)">
+            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">EDIT User</button>
+          </a>
+    
+    </div>
+  </form>

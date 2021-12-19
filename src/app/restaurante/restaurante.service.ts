@@ -28,4 +28,8 @@ export class RestauranteService {
     this.http.delete<any>('http://127.0.0.1:8080/api/restaurante/'+ id).subscribe();
   }
 
+  editar(id:number, rest: Restaurante){
+    this.http.put<any>('http://127.0.0.1:8080/api/restaurante/'+ id, rest).subscribe();
+  }
+
 }

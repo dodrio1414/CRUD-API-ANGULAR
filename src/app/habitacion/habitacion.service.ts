@@ -28,4 +28,8 @@ export class HabitacionService {
     this.http.delete<any>('http://127.0.0.1:8080/api/habitacion/'+ id).subscribe();
   }
 
+  editar(id:number, habitacion: Habitacion){
+    this.http.put<any>('http://127.0.0.1:8080/api/habitacion/'+ id, habitacion).subscribe();
+  }
+
 }

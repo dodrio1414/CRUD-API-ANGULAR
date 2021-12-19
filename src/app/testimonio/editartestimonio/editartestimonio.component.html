@@ -1,0 +1,33 @@
+<form>
+    <div class="form-header">
+        <h5 class="form-title">Create Testimonio</h5>
+    </div>
+    <div class="col">
+    <div class="row">
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Estado</label>
+        <input class="form-control" type="number" name="name" placeholder="1 or 2" id="estadoInput"
+                #inputEstado/>
+        </div>
+    </div>
+
+    </div>
+    
+    
+    <div class="row">
+        <div class="col mb-3">
+            <div class="mb-3">
+            <label class="form-label">Contenido</label>
+            <textarea class="form-control" rows="5" placeholder="Ej. El Choro, La pepera, etc" id="contenidoInput"
+                #inputContenido></textarea>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="text-end px-xl-3">
+        <a href="testimonio" (click)="editarTestimonio(inputContenido.value,inputEstado.valueAsNumber)">
+            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">Create User</button>
+          </a>
+    </div>
+  </form>

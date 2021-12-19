@@ -1,0 +1,66 @@
+<form>
+    <div class="form-header">
+        <h5 class="form-title">Create new Room</h5>
+    </div>
+    <div class="col">
+    <div class="row">
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Nombre habitacion</label>
+        <input class="form-control" type="text" name="name" placeholder="Rodrigo Aguirre Fer" id="nombreInput"
+                #inputNombre/>
+        </div>
+    </div>
+    <div class="col">
+        <div class="mb-3">
+        <label class="form-label">Estado</label>
+        <input class="form-control" type="text" name="username" placeholder="noseKePoner:(" id="loginInput" 
+                #inputEstado/>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">Tipo</label>
+            <input class="form-control" type="text" placeholder="pasword123.a" id="passwordInput"
+                #inputTipo/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+            <label class="form-label">precio</label>
+            <input class="form-control" type="number" placeholder="1 or 2" id="estadoInput"
+                #inputPrecio/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <div class="mb-3">
+            <label class="form-label">Descripcion</label>
+            <textarea class="form-control" rows="5" placeholder="Ej. El Choro, La pepera, etc" id="tareaInput"
+                #inputDescripcion></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <div class="mb-3">
+            <label class="form-label">Foto</label>
+            <textarea class="form-control" rows="5" placeholder="Ej. El Choro, La pepera, etc" id="tareaInput"
+                #inputFoto></textarea>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="text-end px-xl-3">
+        <a href="habitacion" 
+        (click)="editarHabitacion(inputNombre.value,inputEstado.value,inputTipo.value,inputPrecio.valueAsNumber,inputDescripcion.value,inputFoto.value)">
+            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#userformmodal">EDIT User</button>
+          </a>
+    
+    </div>
+  </form>

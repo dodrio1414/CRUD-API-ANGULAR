@@ -16,6 +16,9 @@ import { NuevoclienteComponent } from './cliente/nuevocliente/nuevocliente.compo
 import { NuevorestauranteComponent } from './restaurante/nuevorestaurante/nuevorestaurante.component';
 import { UsuarioeditarComponent } from './usuario/usuarioeditar/usuarioeditar.component';
 import { EditardetallereservaComponent } from './detallereserva/editardetallereserva/editardetallereserva.component';
+import { EditarhabitacionComponent } from './habitacion/editarhabitacion/editarhabitacion.component';
+import { EditarrestauranteComponent } from './restaurante/editarrestaurante/editarrestaurante.component';
+import { EditartestimonioComponent } from './testimonio/editartestimonio/editartestimonio.component';
 
 const routes: Routes = [
   {
@@ -49,8 +52,18 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'testimonio/editartestimonio',
+    component: EditartestimonioComponent,
+    pathMatch: 'full'
+  },
+  {
     path: 'restaurante',
     component: ListaRestauranteComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'restaurante/editarrestaurante',
+    component: EditarrestauranteComponent,
     pathMatch: 'full'
   },
   {
@@ -66,6 +79,11 @@ const routes: Routes = [
   {
     path: 'habitacion/nuevohabitacion',
     component: NuevohabitacionComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'habitacion/editarhabitacion',
+    component: EditarhabitacionComponent,
     pathMatch: 'full'
   },
   {

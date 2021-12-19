@@ -15,8 +15,7 @@ export class ListadetallereservaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  get listaDetalle(){
-    
+  get listaDetalle(){ 
     return this.detallereservaService.lista;
   }
 

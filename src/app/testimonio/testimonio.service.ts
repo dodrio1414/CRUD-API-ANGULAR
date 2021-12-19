@@ -27,4 +27,8 @@ export class TestimonioService {
     this.http.delete<any>('http://127.0.0.1:8080/api/testimonio/'+ id).subscribe();
   }
 
+  editar(id:number, testimonio: Testimonio){
+    this.http.put<any>('http://127.0.0.1:8080/api/testimonio/'+ id, testimonio).subscribe();
+  }
+
 }
